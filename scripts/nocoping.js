@@ -19,11 +19,6 @@
     document.onkeydown = function(e) {
         e = e || window.event;
         
-        // Отключение DevTools
-        if (e.ctrlKey && e.shiftKey && [73,74,67].includes(e.keyCode)) {
-            return false;
-        }
-        
         // Отключение Ctrl+U
         if (e.ctrlKey && e.keyCode == 85) {
             return false;
@@ -34,9 +29,4 @@
             return false;
         }
     };
-    
-    // Защита от отключения JavaScript через DevTools
-    setInterval(function() {
-        debugger;
-    }, 1000);
 })();
