@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105618193', 'ym');
+
+        ym(105618193, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105618193" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ML4DKLR210"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ML4DKLR210');
+    </script>
+    
+    <meta charset="UTF-8">
+    <title>Coffee Culture | Главная</title>
+    <meta name="description" content="Всё о кофе: от зерна до чашки. Полезные статьи, рецепты, обзоры оборудования и гид по кофейным странам.">
+    <meta name="keywords" content="кофе, блог о кофе, статьи, рецепты кофе">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="icon" href="favicon-96x96.png" type="image/png" sizes="96x96">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Добавление firebase для отображения счетчика -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database-compat.js"></script>
+    <script src="scripts/counter.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/nocoping.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="images/Logo.svg" alt="Логотип CoffeeLab">
+                    <div class="logo-text">Coffee Culture</div>
+                </div>
+            </a>
+            <nav class="navigation">
+                <a href="index.html" class="nav-item active" data-tab="main">Главная</a>
+                <a href="list.html" class="nav-item" data-tab="encyclopedia">Статьи</a>
+                <div class="nav-counter">
+                    <p>Любителей кофе на сайте: <span id="counter">1</span></p>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <img src="images/hello.png" alt="Кофе" class="hero-image">
+            <div class="hero-quote">
+                <p>«Вкус кофе прекрасен, но непонятен. Его нужно научиться понимать и любить, только при этом условии можно с упоением наслаждаться им в полной мере.»</p>
+                <p>Гюстав Флобер</p>
+            </div>
+        </section>
+
+        <section class="welcome-section">
+            <div class="welcome-content">
+                <div class="welcome-text">
+                    <div class="welcome-logo">
+                        <img src="images/Logo.svg">
+                        <h1>Coffee Culture</h1>
+                    </div>
+                    <h2>Добро пожаловать в мир настоящего кофе!</h2>
+                    <p>
+                        Здесь мы делимся историями, секретами и знаниями от тех, кто создаёт ваш любимый напиток — от фермеров, выращивающих зерна с любовью, до профессиональных бариста, раскрывающих весь потенциал каждого сорта. Только проверенная информация, вдохновение и экспертные советы для истинных ценителей кофе.
+                    </p>
+                </div>
+                <div class="welcome-image">
+                    <img src="images/coffee_with_beans.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section class="slider-section">
+            <div class="slider-container">
+                <h2 class="slider-title">Популярные материалы</h2>
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide">
+                            <a href="1.html">
+                                <img src="images/history.png" alt="История кофе">
+                                <div class="slide-overlay">
+                                    <h3>История кофе</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="2.html">
+                                <img src="images/tree.png" alt="Выращивание кофе">
+                                <div class="slide-overlay">
+                                    <h3>Выращивание кофе</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="3.html">
+                                <img src="images/coffee_map.jpg" alt="Кофейная карта">
+                                <div class="slide-overlay">
+                                    <h3>Кофейные традиции народов мира</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>О Coffee Culture</h3>
+                    <p>Мы - сообщество любителей кофе, стремящихся делиться знаниями и вдохновлять на новые открытия в мире кофе.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Главная</a></li>
+                        <li><a href="list.html"><i class="fas fa-chevron-right"></i> Статьи</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Скрипт для слайдера
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelector('.slides');
+            const slide = document.querySelectorAll('.slide');
+            const prevBtn = document.querySelector('.prev');
+            const nextBtn = document.querySelector('.next');
+            
+            let currentSlide = 0;
+            const slideCount = slide.length;
+            
+            // Функция для перехода к определенному слайду
+            function goToSlide(n) {
+                slides.style.transform = `translateX(-${n * 100}%)`;
+                currentSlide = n;
+            }
+            
+            // Следующий слайд
+            nextBtn.addEventListener('click', function() {
+                currentSlide = (currentSlide + 1) % slideCount;
+                goToSlide(currentSlide);
+            });
+            
+            // Предыдущий слайд
+            prevBtn.addEventListener('click', function() {
+                currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+                goToSlide(currentSlide);
+            });
+        });
+    </script>
+</body>
+</html>

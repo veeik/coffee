@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /scripts/
+Allow: /
+
+Sitemap: http://coffee1.web-prj.ru/sitemap.xml

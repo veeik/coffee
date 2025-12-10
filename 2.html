@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105618193', 'ym');
+
+        ym(105618193, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105618193" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ML4DKLR210"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ML4DKLR210');
+    </script>
+    
+    <meta charset="UTF-8">
+    <title>Coffee Culture | Как растет кофе: от зерна до чашки</title>
+    <meta name="description" content="Всё о кофе: от зерна до чашки. Полезные статьи, рецепты, обзоры оборудования и гид по кофейным странам.">
+    <meta name="keywords" content="кофе, блог о кофе, статьи, рецепты кофе">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="icon" href="favicon-96x96.png" type="image/png" sizes="96x96">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Добавление firebase для отображения счетчика -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database-compat.js"></script>
+    <script src="scripts/counter.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/nocoping.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="images/Logo.svg" alt="Логотип CoffeeLab">
+                    <div class="logo-text">Coffee Culture</div>
+                </div>
+            </a>
+            <nav class="navigation">
+                <a href="index.html" class="nav-item" data-tab="main">Главная</a>
+                <a href="list.html" class="nav-item" data-tab="encyclopedia">Статьи</a>
+                <div class="nav-counter">
+                    <p>Любителей кофе на сайте: <span id="counter">1</span></p>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <article class="article">
+                <div class="article-header">
+                    <h1>Как растет кофе: от зерна до чашки</h1>
+                    <div class="article-meta">
+                        <span><i class="far fa-clock"></i> Время чтения: 8 мин</span>
+                    </div>
+                </div>
+                
+                <img src="images/tree.png" alt="Кофейное дерево" class="article-image">
+                
+                <div class="article-content">
+                    <div class="text">
+                        <p>Кофе — это не просто напиток, а результат долгого и трудоёмкого процесса, который начинается с выращивания кофейных деревьев. Давайте разберёмся, как растёт кофе и какие этапы он проходит, прежде чем попасть в вашу чашку.</p>
+                        
+                        <h2>Кофейное дерево: основные факты</h2>
+                        <p>Кофейное дерево — это вечнозелёное растение из рода Coffea, семейства мареновых. Существует более 100 видов кофейных деревьев, но только два из них имеют коммерческое значение:</p>
+                        
+                        <div class="cards">
+                            <div class="card">
+                                <h3>Арабика (Coffea arabica)</h3>
+                                <p>Самый популярный сорт, составляющий около 60% мирового производства. Он известен своим нежным вкусом и ароматом.</p>
+                            </div>
+                            <div class="card">
+                                <h3>Робуста (Coffea canephora)</h3>
+                                <p>Более крепкий и горький сорт, содержащий больше кофеина. Его часто используют в эспрессо-смесях.</p>
+                            </div>
+                        </div>
+                        
+                        <p>Кофейные деревья могут достигать высоты 9 метров, но на плантациях их обычно обрезают до 2–3 метров для удобства сбора урожая. Они предпочитают тёплый климат с температурой 18–24°C и обильными осадками.</p>
+                        
+                        <h2>Этапы выращивания кофе</h2>
+                        
+                        <div class="highlight-box">
+                            <h3>1. Посадка семян</h3>
+                            <p>Кофейные деревья выращивают из семян, которые сажают в специальные питомники. Семена прорастают в течение 2–3 месяцев, после чего молодые саженцы пересаживают на плантации. Кофейные деревья начинают плодоносить только через 3–5 лет после посадки.</p>
+                        </div>
+                        
+                        <div class="highlight-box">
+                            <h3>2. Цветение</h3>
+                            <p>Кофейные деревья цветут белыми, ароматными цветами, которые появляются после сезона дождей. Цветение длится всего несколько дней, и в это время плантации покрываются белоснежным покрывалом.</p>
+                        </div>
+                        
+                        <div class="highlight-box">
+                            <h3>3. Формирование плодов</h3>
+                            <p>После опыления цветков образуются плоды — кофейные вишни. Они созревают в течение 6–9 месяцев, меняя цвет с зелёного на жёлтый, красный или фиолетовый, в зависимости от сорта. Каждая вишня содержит два кофейных зерна (иногда одно, если это сорт peaberry).</p>
+                        </div>
+                        
+                        <div class="highlight-box">
+                            <h3>4. Сбор урожая</h3>
+                            <p>Сбор кофейных вишен — это трудоёмкий процесс, который может осуществляться вручную или механически:</p>
+                            <ul>
+                                <li><strong>Ручной сбор</strong> — самый бережный способ, при котором собирают только спелые вишни. Это позволяет получить кофе более высокого качества.</li>
+                                <li><strong>Механический сбор</strong> — используется на крупных плантациях, где деревья выращивают на ровной местности. Машины стряхивают вишни с веток, но при этом собираются и недозрелые плоды.</li>
+                            </ul>
+                            <p>Сезон сбора урожая зависит от региона. Например, в Бразилии он приходится на май–сентябрь, а в Колумбии — на октябрь–декабрь.</p>
+                        </div>
+                        
+                        <h2>Обработка кофейных зёрен</h2>
+                        <p>После сбора кофейные вишни проходят обработку, чтобы извлечь зёрна. Существует несколько методов:</p>
+                        
+                        <div class="cards">
+                            <div class="card">
+                                <h3>Сухой метод</h3>
+                                <p>Вишни сушат на солнце в течение 2–3 недель, регулярно переворачивая. После высыхания мякоть и шелуха легко отделяются от зёрен. Этот метод используется в регионах с ограниченным доступом к воде, например, в Бразилии и Эфиопии.</p>
+                            </div>
+                            <div class="card">
+                                <h3>Мокрый метод</h3>
+                                <p>Вишни очищают от мякоти с помощью воды и ферментации. Затем зёрна сушат и удаляют оставшуюся шелуху. Мокрый метод позволяет получить более чистый и качественный кофе, но требует большого количества воды. Он распространён в Колумбии, Кении и Центральной Америке.</p>
+                            </div>
+                            <div class="card">
+                                <h3>Полусухой метод</h3>
+                                <p>Сочетает элементы сухого и мокрого методов. Вишни очищают от мякоти, но сушат вместе с липким слоем, который удаляют только после высыхания. Этот метод популярен в Индонезии и Бразилии.</p>
+                            </div>
+                        </div>
+                        
+                        <h2>Обжарка и упаковка</h2>
+                        <p>После обработки зёрна очищают от оставшейся шелухи и сортируют по размеру и качеству. Затем их обжаривают при температуре 180–250°C. Обжарка влияет на вкус и аромат кофе:</p>
+                        
+                        <div class="cards">
+                            <div class="card">
+                                <h3>Светлая обжарка</h3>
+                                <p>Сохраняет естественную кислинку и фруктовые нотки.</p>
+                            </div>
+                            <div class="card">
+                                <h3>Средняя обжарка</h3>
+                                <p>Баланс между кислотностью и горечью.</p>
+                            </div>
+                            <div class="card">
+                                <h3>Тёмная обжарка</h3>
+                                <p>Придаёт кофе насыщенный, горьковатый вкус с шоколадными нотками.</p>
+                            </div>
+                        </div>
+                        
+                        <p>После обжарки зёрна упаковывают и отправляют в кофейни и магазины по всему миру.</p>
+                        
+                        <div class="highlight-box">
+                            <h3>Заключение</h3>
+                            <p>Выращивание кофе — это сложный и многолетний процесс, требующий терпения, знаний и труда. От посадки семян до обжарки зёрен проходит несколько лет, и каждый этап влияет на конечный вкус напитка. Теперь, когда вы знаете, как растёт кофе, вы можете по-новому оценить каждую чашку этого ароматного напитка.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>О Coffee Culture</h3>
+                    <p>Мы - сообщество любителей кофе, стремящихся делиться знаниями и вдохновлять на новые открытия в мире кофе.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Главная</a></li>
+                        <li><a href="list.html"><i class="fas fa-chevron-right"></i> Статьи</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
